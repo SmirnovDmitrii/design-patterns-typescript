@@ -181,6 +181,7 @@ class ConcreteProductB2 implements AbstractProductB {
  * типы: Абстрактная Фабрика и Абстрактный Продукт. Это позволяет передавать
  * любой подкласс фабрики или продукта клиентскому коду, не нарушая его.
  */
+// @ts-ignore
 function clientCode(factory: AbstractFactory) {
     const productA = factory.createProductA();
     const productB = factory.createProductB();
